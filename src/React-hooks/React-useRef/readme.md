@@ -1,0 +1,4 @@
+1.函数式组件或者类组件可以通过useRef+React.forwardRef做ref的层层转发 拿到组件的实例;
+2.使用useRef时 当子组件dom实例发生改变时 useRef不会引起父组件的实时重新渲染，必须手动获取子组件实例的值，需要使用useCallback代替useRef。
+3.useImperativeHandle 可以自定义暴露出去的子组件实例的属性和方法。
+4.对于子组件需要获取多个dom元素实例时，可以多次使用useRef获取自己的实例。
