@@ -8,10 +8,12 @@ const Parent = (props) => {
     const inputRef = useCallback(node => {
         if (node !== null) {
             console.log(node, 'node')
+            console.log(node, 'node')
             setValue1(node.value1);
             setValue2(node.value2);
         }
     }, [value1, value2])
+    console.log(inputRef, 'xxx')
     const getInputFocus = () => {
         console.log(inputRef, 'inputRef') // 不能直接获取dom实例时获取的是初始值null
         // inputRef.current.focus();

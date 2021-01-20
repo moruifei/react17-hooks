@@ -4,7 +4,8 @@ const ref = React.createRef();
 
 class Index extends React.Component{
     componentDidMount(){
-        console.log(ref.current.focus())
+        ref.current.focus()
+        console.log(ref, 'ref')
     }
     render(){
         return (<Input ref={ref}/>)

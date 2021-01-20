@@ -1,6 +1,6 @@
 import React from 'react';
 import InputToHoc from './hoc';
-
+@InputToHoc
 class TextInput extends React.Component {
     componentDidMount(){
     }
@@ -9,7 +9,7 @@ class TextInput extends React.Component {
     }
     render() {
         return (
-            <input id='input' type="text" />
+            <input defaultValue="我是子组件" id='input' type="text" />
         )
     }
 }
@@ -19,4 +19,4 @@ class TextInput extends React.Component {
 //         <input type="text" />
 //     )
 // }
-export default InputToHoc(TextInput);
+export default TextInput;
